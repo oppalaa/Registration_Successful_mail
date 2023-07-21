@@ -1,0 +1,33 @@
+{% extends 'dummy.html' %}
+
+{% block title %}
+    <title>Login Page</title>
+{% endblock %}
+
+{% block body_block %}
+
+<center>
+    <h1>Login Form</h1>
+        <form method="POST">
+            {% csrf_token %}
+            <tr>
+               <td><label for="username">Username</label></td> 
+                <td><input type="text" name="username" id="username"></td>
+            </tr><br><br>
+                <tr>
+               <td> <label for="password">Password</label></td>
+               <td> <input type="password" name="password" id="password"></td>
+            </tr><br><br>
+            <tr>
+           <td> <input type="submit" value="LogIn" class="btn btn-warning"></td>
+        </tr>
+        </form>
+    </center>
+    <style>
+        body
+        {
+            background-image: url(https://www.shutterstock.com/shutterstock/photos/1341139622/display_1500/stock-photo-access-window-with-login-and-password-on-virtual-screen-cyber-security-and-personal-data-1341139622.jpg);
+            color:whitesmoke;
+        }
+
+    {% endblock %}

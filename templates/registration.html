@@ -1,11 +1,16 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
+{% extends 'dummy.html' %}
+
+{% block title %}
+    <title>Registration</title>
+{% endblock %}
+<!-- <style>
+    body
+    {
+        background-image: url(https://thumbs.dreamstime.com/b/registration-online-membership-network-internet-business-technology-concept-104512007.jpg);
+    }
+</style> -->
+
+{% block body_block %}
     <center>
         <h1>registration Form</h1>
         <table>
@@ -25,5 +30,11 @@
             </form>
         </table>
     </center>
-</body>
-</html>
+    <style>
+        body
+        {
+            background-image: url(https://images6.alphacoders.com/414/414206.jpg);
+            color: antiquewhite;
+        }
+    </style>
+    {% endblock %}

@@ -1,0 +1,24 @@
+{% extends 'dummy.html' %}
+
+{% block title %}
+<title>Home</title>
+{% endblock %}
+
+{% block body_block %}
+<center>
+    {% if username %}
+        <h1>Welcome To HomePage MR/MS:{{username}}</h1>
+    {% else %}
+         <h1>Welcome To HomePage</h1>
+    {% endif %}
+</center>
+<style>
+    body
+    {
+        background-image: url(https://cdn.wallpapersafari.com/88/28/gD7bTr.jpg);
+        background-size: cover;
+        color: ghostwhite;
+    }
+</style>
+
+{% endblock %}
